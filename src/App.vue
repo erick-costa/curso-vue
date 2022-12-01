@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header :is_logged="true" />
   <FirstComponent />
   <LifeCycle />
   <Person />

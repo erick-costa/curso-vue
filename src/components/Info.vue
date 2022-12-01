@@ -27,11 +27,13 @@ export default {
   components: {
     Picture,
   },
+  props: {
+    email: String,
+    is_working: Boolean,
+  },
   data() {
     return {
-      is_working: true,
       show_email: false,
-      email: "erick@email.com",
       my_link: "https://github.com/erick-costa",
       buttonText: "Mostrar Email",
       backend: ["JavaScript", "Python"],

@@ -1,12 +1,13 @@
 <template>
   <p v-if="is_working">Estou trabalhando no momento.</p>
   <p v-else>Estou em busca de novas oportunidades</p>
-  <p>Utilizo as seguintes tecnologias:</p>
+  <p>Utilizo as seguintes tecnologias para back-end:</p>
   <ul>
-    <li>JavaScript</li>
-    <li>Python</li>
-    <li>React.js</li>
-    <li>Vue.js</li>
+    <li v-for="item in backend">{{ item }}</li>
+  </ul>
+  <p>Utilizo as seguintes tecnologias para front-end:</p>
+  <ul>
+    <li v-for="item in frontend">{{ item.technology }}</li>
   </ul>
   <div>
     <button @click="showEmail">{{ buttonText }}</button>
@@ -33,6 +34,13 @@ export default {
       email: "erick@email.com",
       my_link: "https://github.com/erick-costa",
       buttonText: "Mostrar Email",
+      backend: ["JavaScript", "Python"],
+      frontend: [
+        { id: 1, technology: "HTML" },
+        { id: 1, technology: "CSS" },
+        { id: 1, technology: "React" },
+        { id: 1, technology: "Vue" },
+      ],
     }
   },
   methods: {

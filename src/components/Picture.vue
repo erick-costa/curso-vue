@@ -1,10 +1,10 @@
 <template>
   <img :src="avatar" :alt="alt" :title="alt" />
-  <Reuse />
+  <Changeimage @change-image="changeImage" />
 </template>
 
 <script>
-import Reuse from "./Reuse.vue"
+import Changeimage from "./Changeimage.vue"
 
 export default {
   name: "Picture",
@@ -14,6 +14,11 @@ export default {
       alt: "Erick Costa",
     }
   },
-  components: { Reuse },
+  components: { Changeimage },
+  methods: {
+    changeImage() {
+      this.avatar = "/img/avatar2.png"
+    },
+  },
 }
 </script>

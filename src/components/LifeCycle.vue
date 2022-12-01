@@ -14,11 +14,18 @@ export default {
     setTimeout(() => {
       this.name = "Pedro"
     }, 1000)
+    this.lifeCycle()
   },
   mounted() {
     setTimeout(() => {
       this.name = "Erick"
     }, 2000)
+    this.lifeCycle()
+  },
+  methods: {
+    lifeCycle() {
+      console.log("Executou")
+    },
   },
 }
 </script>

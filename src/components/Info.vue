@@ -37,9 +37,9 @@ export default {
       backend: ["JavaScript", "Python"],
       frontend: [
         { id: 1, technology: "HTML" },
-        { id: 1, technology: "CSS" },
-        { id: 1, technology: "React" },
-        { id: 1, technology: "Vue" },
+        { id: 2, technology: "CSS" },
+        { id: 3, technology: "React" },
+        { id: 4, technology: "Vue" },
       ],
     }
   },
